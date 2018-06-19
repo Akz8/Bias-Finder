@@ -54,10 +54,10 @@ class App extends Component {
         return 'border:none;';
     }
     setText() {
-        // if(this.state.newText !== null) {
-        //     document.getElementById('div').innerHTML = this.state.newText;
-        //     this.placeCaretAtEnd(document.getElementById('div'));
-        // }
+        if(this.state.newText !== null) {
+            document.getElementById('div').innerHTML = this.state.newText;
+            this.placeCaretAtEnd(document.getElementById('div'));
+        }
         console.log('hellooooo')
     }
     placeCaretAtEnd(el) {
