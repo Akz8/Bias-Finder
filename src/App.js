@@ -18,7 +18,7 @@ class App extends Component {
     }
     componentDidMount() {
         const endpoint = {
-            feminineTargetedWords: ['our team', 'contribue', 'interpersonal', 'caring', 'encourage', 'family', 'families', 'helpful', 'sincere', 'interpersonal skills', 'meaningful', 'collaborative', 'empathy', 'kindness', 'passion for making', 'balancing', 'take care of', 'supportive', 'a sincere', 'catalyst'],
+            feminineTargetedWords: ['kitty', 'our team', 'contribute', 'interpersonal', 'caring', 'encourage', 'family', 'families', 'helpful', 'sincere', 'interpersonal skills', 'meaningful', 'collaborative', 'empathy', 'kindness', 'passion for making', 'balancing', 'take care of', 'supportive', 'a sincere', 'catalyst'],
             maleTargetedWords: ['enforced', 'competitive', 'superior', 'phenomenal', 'unrivalled', 'tackle', 'drive', 'exceptional', 'experts', 'manage', 'relationships managing command']
         };
         const allWords = endpoint.maleTargetedWords.concat(endpoint.feminineTargetedWords);
@@ -58,6 +58,7 @@ class App extends Component {
             document.getElementById('div').innerHTML = this.state.newText;
             this.placeCaretAtEnd(document.getElementById('div'));
         }
+        console.log('hellooooo')
     }
     placeCaretAtEnd(el) {
         el.focus();
