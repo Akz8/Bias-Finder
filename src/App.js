@@ -105,7 +105,8 @@ class App extends Component {
                     <div className="femCounter">{this.state.femWordCount}</div>
                     <div className="maleCounter">{this.state.maleWordCount}</div>
                 </div>
-                <div className="userTextContent" onKeyUp={this.findBias} id="div" contentEditable="true" />
+                <div className="userTextContent" id="div" contentEditable="true" />
+                <button className='styledButton' onClick={this.findBias}>Search</button>
             </div>
         );
     }
