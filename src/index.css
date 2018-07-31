@@ -1,82 +1,107 @@
-.biasWordsHighlighterContainer {
-    max-width: 1300px;
-    width: 100%;
+*{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+}
+
+#userContent{
+    border: 1px solid black;
+    width: 60vw;
     margin: 0 auto;
-    font-family: Arial;
-}
-
-.femWord{
-    border:2px solid #aa69a5;
-    border-radius:4px;
-}
-
-.femWord:hover{
-    background-color: #aa69a5;
-    color: white;
-}
-
-.maleWord{
-    border:2px solid #0974ef;
-    border-radius:4px;
-}
-
-.maleWord:hover{
-    background-color:#0974ef;
-    color: white;
-}
-
-.headingTitle {
-    text-align: center;
-    widows: 400px;
-    margin: 0 auto;
-    letter-spacing: .3rem;
-    line-height: 150%;
-    padding-top: 3rem; 
-}
-
-.tagline {
-    text-align: center;
-    width: 800px;
-    margin: 0 auto;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    color: #8186AA;
-    letter-spacing: .1rem;
-    line-height: 150%;
-}
-
-.userTextContent{
-    width: 600px;
-    height: 650px;
-    margin: 0 auto;
-    border: 4px solid orange;
     border-radius: 4px;
-    font-size: 1.2rem;
-    padding: 1.4rem;
-    box-shadow: 0px 0px 53px 0px rgba(0,0,0,0.5);
-    background-color: white;
-    overflow: auto;
+    height: 70vh;
+    letter-spacing: .04em;
+    padding: 1rem;
 }
-.counterContainer{
-    width: 800px;
-    margin: 0 auto;
-    text-align: center; 
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+div{
+    position: relative;
 }
-.femCounter{
-    display: inline-block;
-    margin-right: 20px;
-    background-color: #aa69a5;
-    padding: 7px 10px 6px 10px;
+
+aside {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 15vw;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.purpleBorder {
+    border-bottom: 1.5px solid #BB8FCE;
+
+}
+
+.purpleBorder:hover {
+    background-color: #BB8FCE;
+    border: 1px solid #BB8FCE;
+    border-radius: 4px;
+}
+
+.blueBorder {
+    border-bottom: 1.5px solid #85C1E9;
+
+}
+
+.blueBorder:hover {
+    background-color: #85C1E9;
+    border: 1px solid #85C1E9;
+    border-radius: 4px;
+}
+
+#userContent div {
+    display: inline;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color:white;
+    z-index: 2;
+    left: 0;
+}
+
+.hidden {
+    display:none;
+}
+
+.visible{
+    border:1px solid grey;
+    border-radius: 4px;
+    display: block;
+}
+
+.visible li {
+    list-style-type: none;
+}
+
+.purpleBorder ul li:hover {
+    background-color: #E3CEEC;
+    cursor: pointer;
+}
+
+.blueBorder ul li:hover {
+    background-color: #EBF5FB;
+    cursor: pointer;
+}
+
+#maleCircle {
+    background-color: #85C1E9;
+}
+
+#femCircle {
+    background-color: #BB8FCE;
+}
+
+#maleCircle,
+#femCircle {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    color: white;
-}
-.maleCounter{
     display: inline-block;
-    margin-right: 20px;
-    background-color: #0974ef;
-    padding: 7px 10px 6px 10px;
-    border-radius: 50%;
     color: white;
+    text-align: center;
 }
